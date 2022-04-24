@@ -37,7 +37,7 @@
                         ]
                     },
                     {
-                        "description": "Shift + j, k to Home/End",
+                        "description": "Shift + i, j, k, l to Home/End/PgUp/PgDn",
                         "manipulators": [
                             {
                                 "from": {
@@ -54,7 +54,39 @@
                                     }
                                 ],
                                 "type": "basic"
-                            }, 
+                            },
+                            {
+                                "from": {
+                                    "key_code": "l",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "end"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "i",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "page_up"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
                             {
                                 "from": {
                                     "key_code": "k",
@@ -66,7 +98,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "end"
+                                        "key_code": "page_down"
                                     }
                                 ],
                                 "type": "basic"
@@ -462,6 +494,113 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Change button4,5 to forward,back (rev 1)",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "keyboard_types": [
+                                            "ansi",
+                                            "iso"
+                                        ],
+                                        "type": "keyboard_type_if"
+                                    }
+                                ],
+                                "from": {
+                                    "modifiers": {
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    },
+                                    "pointing_button": "button4"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "close_bracket",
+                                        "modifiers": "left_command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "keyboard_types": [
+                                            "jis"
+                                        ],
+                                        "type": "keyboard_type_if"
+                                    }
+                                ],
+                                "from": {
+                                    "modifiers": {
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    },
+                                    "pointing_button": "button4"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "backslash",
+                                        "modifiers": "left_command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "keyboard_types": [
+                                            "ansi",
+                                            "iso"
+                                        ],
+                                        "type": "keyboard_type_if"
+                                    }
+                                ],
+                                "from": {
+                                    "modifiers": {
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    },
+                                    "pointing_button": "button5"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "open_bracket",
+                                        "modifiers": "left_command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "keyboard_types": [
+                                            "jis"
+                                        ],
+                                        "type": "keyboard_type_if"
+                                    }
+                                ],
+                                "from": {
+                                    "modifiers": {
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    },
+                                    "pointing_button": "button5"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "close_bracket",
+                                        "modifiers": "left_command"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
@@ -716,7 +855,7 @@
                         ]
                     },
                     {
-                        "description": "Shift + j, k to Home/End",
+                        "description": "Shift + i, j, k, l to Home/End/PgUp/PgDn",
                         "manipulators": [
                             {
                                 "from": {
@@ -733,7 +872,39 @@
                                     }
                                 ],
                                 "type": "basic"
-                            }, 
+                            },
+                            {
+                                "from": {
+                                    "key_code": "l",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "end"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "i",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "page_up"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
                             {
                                 "from": {
                                     "key_code": "k",
@@ -745,7 +916,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "end"
+                                        "key_code": "page_down"
                                     }
                                 ],
                                 "type": "basic"
