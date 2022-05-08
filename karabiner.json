@@ -37,14 +37,15 @@
                         ]
                     },
                     {
-                        "description": "i j k l + ; to home,end,pgup,pgdown",
+                        "description": "i j k l + rcmd  + shift to home,end,pgup,pgdown",
                         "manipulators": [
                             {
                                 "from": {
                                     "key_code": "j",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_option"
+                                            "right_command",
+                                            "left_shift"
                                         ],
                                         "optional": [
                                             "any"
@@ -63,7 +64,8 @@
                                     "key_code": "l",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_option"
+                                            "right_command",
+                                            "left_shift"
                                         ],
                                         "optional": [
                                             "any"
@@ -82,7 +84,8 @@
                                     "key_code": "i",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_option"
+                                            "right_command",
+                                            "left_shift"
                                         ],
                                         "optional": [
                                             "any"
@@ -100,7 +103,8 @@
                                     "key_code": "k",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_option"
+                                            "right_command",
+                                            "left_shift"
                                         ],
                                         "optional": [
                                             "any"
@@ -809,14 +813,15 @@
                         ]
                     },
                     {
-                        "description": "i j k l + ; to home,end,pgup,pgdown",
+                        "description": "i j k l + rcmd  + shift to home,end,pgup,pgdown",
                         "manipulators": [
                             {
                                 "from": {
                                     "key_code": "j",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_option"
+                                            "right_command",
+                                            "left_shift"
                                         ],
                                         "optional": [
                                             "any"
@@ -835,7 +840,8 @@
                                     "key_code": "l",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_option"
+                                            "right_command",
+                                            "left_shift"
                                         ],
                                         "optional": [
                                             "any"
@@ -854,7 +860,8 @@
                                     "key_code": "i",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_option"
+                                            "right_command",
+                                            "left_shift"
                                         ],
                                         "optional": [
                                             "any"
@@ -872,7 +879,8 @@
                                     "key_code": "k",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_option"
+                                            "right_command",
+                                            "left_shift"
                                         ],
                                         "optional": [
                                             "any"
