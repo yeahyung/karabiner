@@ -1,0 +1,5 @@
+map a goBack
+map s goForward
+map q previousTab
+map w nextTab
+map / focusInput
