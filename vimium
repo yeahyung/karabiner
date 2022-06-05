@@ -1,5 +1,18 @@
+# Insert your preferred key mappings here.
 map a goBack
+map ㅁ goBack
 map s goForward
+map ㄴ goForward
 map q previousTab
+map ㅂ previousTab
 map w nextTab
+map ㅈ nextTab
 map / focusInput
+map ㄱ reload
+map ㅓ scrollDown
+map ㅏ scrollUp
+map ㅎㅎ scrollToTop
+map ㅇ scrollPageDown
+map ㅕ scrollPageUp
+map ㅌ removeTab
+map ㅅ createTab
